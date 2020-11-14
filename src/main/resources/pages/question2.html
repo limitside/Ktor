@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.limitside.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><h1>тег ol является нумерованным списком ?</h1></center>
+<h2 th:text=" ${question} + '?'"></h2>
+<form action="/answer2" method="post">
+    <div align="left">
+        <p><input name="answer" type="radio" value="true" size="10">true</p>
+        <p><input name="answer" type="radio" value="false" size="10">false</p>
+
+        <p><input type="submit" name="next"></p>
+    </div>
+</form>
+
+</div>
+</body>
+</html>
