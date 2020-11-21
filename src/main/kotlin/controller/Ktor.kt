@@ -73,7 +73,7 @@ fun main() {
 
                 call.respond(ThymeleafContent("user", mapOf("user" to user)))
             }
-
+                    //открывает эту страницу первой
             get("/question1") {
                 val question = "What tag use for string with new string"
                 call.respond(ThymeleafContent("question1", mapOf("question" to question)))
@@ -104,7 +104,7 @@ fun main() {
 
                 // ans[Answer("false")] = answer
 
-                call.respondText { "$answers" }
+                call.respondFile(File("./src/main/resources/pages/Табл.html"))
             }
 
         }
